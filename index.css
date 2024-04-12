@@ -1,1 +1,7 @@
-/*# sourceMappingURL=index.css.map */
+li {
+  list-style: none;
+}
+
+svg {
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
