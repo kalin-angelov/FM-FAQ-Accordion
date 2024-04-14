@@ -1,11 +1,76 @@
+$white: hsl(0, 0%, 100%);
+$lightPink: hsl(275, 100%, 97%);
+$grayishPurple: hsl(292, 16%, 49%);
+$darkPurple: hsl(292, 42%, 14%);
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 body {
+    background-color: $lightPink;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
     background-image: url('../public/images/background-pattern-desktop.svg');
+    background-repeat: repeat-x;
+    background-size: auto;
+}
+
+main {
+    border: 2px solid $white;
+    background-color: $white;
+    border-radius: 15px;
+    padding: 30px;
+    padding-bottom: 5px;
+    margin: 200px auto;
+    width: 500px;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 li {
     list-style: none;
+    border-bottom: 1.5px solid $lightPink;
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
-div {
+.header {
+    @include flex();
+    gap: 18px;
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0
+    }
+}
+
+.question-container {
+    @include flex();
+    justify-content: space-between;
     cursor: pointer;
+    padding: 10px 0;
+}
+
+.question {
+    font-weight: 700;
+    margin: 20px 0;
+    &:hover {
+        color: #ad28eb;
+    }
+}
+
+.answer {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 15px;
+    color: $grayishPurple;
 }
