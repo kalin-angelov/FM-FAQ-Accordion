@@ -25,12 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile Screenshot](./public/screenshots/screenshot-one.png)
 ![Desktop Screenshot](./public/screenshots/screenshot-two.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://fm-faq-accordion-jade.vercel.app/)
+- Live Site URL: [Click here](https://fm-faq-accordion-jade.vercel.app/)
 
 ## My process
 
