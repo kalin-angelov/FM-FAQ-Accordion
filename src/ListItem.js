@@ -9,7 +9,7 @@ export const ListItem = ({ item }) => {
 
     return (
         <>
-            <section onClick={handleDropDown} className="question-container">
+            <div onClick={handleDropDown} className="question-container">
                 <span className="question">
                     {item.question}
                 </span>
@@ -39,10 +39,10 @@ export const ListItem = ({ item }) => {
                         </svg>
                     }
                 </div>
-            </section> 
-            <section className="answer-container">
+            </div> 
+            <div className="answer-container">
                 {showDropDown &&  <p className="answer">{item.answer}</p>}
-            </section>
+            </div>
         </>
     );
 };

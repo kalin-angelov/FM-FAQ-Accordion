@@ -13,7 +13,7 @@ body {
     background-color: $lightPink;
     font-size: 16px;
     font-family: "Work Sans", sans-serif;
-    background-image: url('../public/images/background-pattern-desktop.svg');
+    background-image: url('../public/images/background-pattern-mobile.svg');
     background-repeat: repeat-x;
     background-size: auto;
 }
@@ -22,11 +22,8 @@ main {
     border: 2px solid $white;
     background-color: $white;
     border-radius: 15px;
-    padding: 30px;
-    padding-bottom: 5px;
+    padding: 30px 25px 22px 25px; 
     margin: 200px auto;
-    width: 500px;
-    height: auto;
 }
 
 ul {
@@ -46,9 +43,13 @@ li {
     @include flex();
     gap: 18px;
     h1 {
-        font-size: 50px;
         font-weight: 700;
         margin: 0
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
     }
 }
 
@@ -61,7 +62,7 @@ li {
 
 .question {
     font-weight: 700;
-    margin: 20px 0;
+    margin: 20px 50px 20px 0;
     &:hover {
         color: #ad28eb;
     }
@@ -71,11 +72,33 @@ li {
     margin: 0 0 20px 0;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 15px;
     color: $grayishPurple;
 }
 
 .answer-container {
     max-width: 100%;
-    transition: max-hight 0.3s ease-in-out;
+}
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url('../public/images/background-pattern-desktop.svg');
+    }
+
+    main {
+        width: 520px;
+        padding: 53px 38px 44px 38px;
+    }
+
+    .header {
+        h1 {
+            font-size: 40px;
+        }
+    
+        .icon {
+            width: 38px;
+            height: 38px;
+        }
+    }
+    
 }
