@@ -66,4 +66,9 @@ li:last-child {
   line-height: 1.5;
   font-size: 15px;
   color: hsl(292, 16%, 49%);
+}
+
+.answer-container {
+  max-width: 100%;
+  transition: max-hight 0.3s ease-in-out;
 }/*# sourceMappingURL=App.css.map */
