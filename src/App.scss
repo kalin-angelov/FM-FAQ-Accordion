@@ -74,3 +74,8 @@ li {
     font-size: 15px;
     color: $grayishPurple;
 }
+
+.answer-container {
+    max-width: 100%;
+    transition: max-hight 0.3s ease-in-out;
+}
